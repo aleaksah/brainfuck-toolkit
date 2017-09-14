@@ -13,6 +13,6 @@ _Bool InterpGetMemory(uint32_t offset, uint32_t count, int8_t *dst);
 _Bool InterpSetMemory(uint32_t offset, uint32_t count, int8_t *src);
 uint32_t InterpGetIP();
 _Bool InterpSetIP(uint32_t new_ip);
-_Bool IsEndOfProgram();
+_Bool InterpIsEndOfProgram();
 
 #endif
