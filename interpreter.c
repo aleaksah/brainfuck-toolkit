@@ -1,6 +1,8 @@
 /**
 \file
 \brief Interpreter implementation
+\addtogroup Interpreter Brainfuck interpreter
+@{
 */
 
 #include "interpreter.h"
@@ -267,7 +269,7 @@ _Bool InterpSetIP(uint32_t new_ip)
 }
 
 /**
-\brief If program execution ended
+\brief Is program execution ended
 \details Returns true, if IP points to the end of program, otherwise false.
 Useful to test cause of stopped program: end of program or breakpoint.
 */
@@ -285,3 +287,4 @@ _Bool InterpIsEndOfProgram()
 
 	return true;
 }
+/**@}*/
